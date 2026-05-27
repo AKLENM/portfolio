@@ -150,6 +150,22 @@
     color: var(--accent);
   }
 
+  /* --- Links --- */
+  .links-grid { display: flex; gap: 16px; flex-wrap: wrap; }
+  .link-card {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 28px; border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text); text-decoration: none;
+    font-size: 15px; font-weight: 500;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .link-card:hover { border-color: #4a4d53; background: var(--surface-2); }
+  .link-card.download { border-color: rgba(96,165,250,0.3); }
+  .link-card.download:hover { border-color: var(--accent-dim); }
+  .link-icon { font-size: 18px; color: var(--accent); }
+
   /* --- Contact --- */
   .contact-row { display: flex; gap: 24px; flex-wrap: wrap; }
   .contact-card {
@@ -216,6 +232,7 @@
     <div class="logo">个人介绍</div>
     <ul class="links">
       <li><a href="#about">关于</a></li>
+      <li><a href="#links">链接</a></li>
       <li><a href="#skills">技能</a></li>
       <li><a href="#competitions">竞赛</a></li>
       <li><a href="#contact">联系</a></li>
@@ -264,6 +281,25 @@
         <div><div class="label">竞赛获奖</div><div class="value">国家级三等奖 1 项 · 华东赛区二等奖 1 项 · 江苏省三等奖 1 项</div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="links">
+  <div class="sec-label">Links</div>
+  <div class="sec-title">链接</div>
+  <div class="links-grid">
+    <a href="https://github.com/AKLENM" target="_blank" class="link-card">
+      <span class="link-icon">&lt;/&gt;</span>
+      <span>GitHub</span>
+    </a>
+    <a href="https://blog.csdn.net/2303_79175394?spm=1000.2115.3001.5343" target="_blank" class="link-card">
+      <span class="link-icon">&#9998;</span>
+      <span>CSDN 技术博客</span>
+    </a>
+    <a href="许超程_嵌入式软件工程师_求职简历.docx" class="link-card download">
+      <span class="link-icon">&darr;</span>
+      <span>下载简历</span>
+    </a>
   </div>
 </section>
 
@@ -368,27 +404,6 @@
         <div class="contact-value">aklenm</div>
       </div>
     </div>
-    <a href="https://github.com/AKLENM" target="_blank" class="contact-card" style="text-decoration:none;">
-      <span class="contact-icon">&lt;/&gt;</span>
-      <div>
-        <div class="contact-label">GitHub</div>
-        <div class="contact-value">@AKLENM</div>
-      </div>
-    </a>
-    <a href="https://blog.csdn.net/2303_79175394?spm=1000.2115.3001.5343" target="_blank" class="contact-card" style="text-decoration:none;">
-      <span class="contact-icon">&#9998;</span>
-      <div>
-        <div class="contact-label">CSDN</div>
-        <div class="contact-value">技术博客</div>
-      </div>
-    </a>
-    <a href="许超程_嵌入式软件工程师_求职简历.docx" class="contact-card" style="text-decoration:none;">
-      <span class="contact-icon">&darr;</span>
-      <div>
-        <div class="contact-label">简历</div>
-        <div class="contact-value">下载简历</div>
-      </div>
-    </a>
   </div>
 </section>
 
