@@ -372,10 +372,11 @@
 </section>
 
 <footer>
-  &copy; 2026 许超程. All rights reserved.
+  &copy; <span id="year"></span> 许超程. All rights reserved.
 </footer>
 
 <script>
+document.getElementById('year').textContent = new Date().getFullYear();
 document.querySelectorAll('.contact-value').forEach(el => {
   el.style.cursor = 'pointer';
   el.title = '点击复制';
