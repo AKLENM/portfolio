@@ -137,7 +137,7 @@
   /* --- Competitions --- */
   .comp-list { display: flex; flex-direction: column; gap: 2px; }
   .comp-item {
-    display: grid; grid-template-columns: 120px 1fr 140px;
+    display: grid; grid-template-columns: 140px 1fr 130px;
     align-items: center; gap: 24px;
     padding: 18px 24px; border-radius: 10px;
     transition: background 0.2s;
@@ -145,9 +145,9 @@
   .comp-item:hover { background: var(--surface); }
   .comp-date { font-size: 13px; color: var(--text-muted); font-weight: 500; }
   .comp-name { font-size: 16px; font-weight: 600; }
-  .comp-tag {
-    font-size: 11px; font-weight: 500; text-align: right;
-    color: var(--accent-dim);
+  .comp-award {
+    font-size: 13px; font-weight: 500; text-align: right;
+    color: var(--accent);
   }
 
   /* --- Contact --- */
@@ -201,7 +201,7 @@
     .hero .sub { max-width: 100%; }
     .about-grid { grid-template-columns: 1fr; }
     .comp-item { grid-template-columns: 1fr; gap: 4px; }
-    .comp-tag { text-align: left; }
+    .comp-award { text-align: left; }
     nav .links { gap: 16px; }
   }
 </style>
@@ -229,9 +229,9 @@
       <div class="tag">Robotics Engineering</div>
       <h1>许超程<br><span>机器人工程</span></h1>
       <p class="sub">
-        南京工业大学 · 机器人工程专业<br>
-        热爱嵌入式系统、机器人控制与计算机视觉。
-        活跃于全国大学生智能汽车竞赛、电赛、蓝桥杯等学科竞赛。
+        南京工业大学 · 2011学院（创新创业学院）<br>
+        机器人工程专业本科生<br>
+        专注嵌入式系统与机器人控制，热爱工程实践与学科竞赛。
       </p>
     </div>
     <div class="hero-avatar">
@@ -245,23 +245,23 @@
   <div class="sec-title">关于我</div>
   <div class="about-grid">
     <p class="about-text">
-      我是许超程，南京工业大学机器人工程专业本科生。
-      专注于嵌入式系统开发、机器人控制算法与计算机视觉。
-      热衷于将理论落地为实物，享受从 PCB 设计到算法部署的完整工程链路。
-      目前在多个国家级学科竞赛中积累实战经验。
+      我是许超程，南京工业大学 2011学院（创新创业学院）机器人工程专业本科生。
+      专注于嵌入式系统开发与机器人控制，热衷于将理论落地为实物，
+      享受从硬件搭建到算法部署的完整工程链路。
+      多次在国家级及省级学科竞赛中获奖，具备扎实的嵌入式开发与实战能力。
     </p>
     <div class="about-meta">
       <div class="meta-item">
         <span class="icon">&#9733;</span>
-        <div><div class="label">学校</div><div class="value">南京工业大学</div></div>
+        <div><div class="label">学校</div><div class="value">南京工业大学 · 2011学院（创新创业学院）</div></div>
       </div>
       <div class="meta-item">
         <span class="icon">&#9671;</span>
-        <div><div class="label">方向</div><div class="value">嵌入式系统 / 机器人控制 / 计算机视觉</div></div>
+        <div><div class="label">方向</div><div class="value">嵌入式系统 / 机器人控制 / 工业自动化</div></div>
       </div>
       <div class="meta-item">
         <span class="icon">&#9654;</span>
-        <div><div class="label">竞赛经验</div><div class="value">智能车 · 电赛 · 蓝桥杯 · 机器人及AI大赛</div></div>
+        <div><div class="label">竞赛获奖</div><div class="value">国家级三等奖 1 项 · 华东赛区二等奖 1 项 · 江苏省三等奖 1 项</div></div>
       </div>
     </div>
   </div>
@@ -328,24 +328,24 @@
   <div class="sec-title">竞赛经历</div>
   <div class="comp-list">
     <div class="comp-item">
-      <span class="comp-date">2024 · 2025</span>
-      <span class="comp-name">全国大学生智能汽车竞赛</span>
-      <span class="comp-tag">嵌入式 · 控制</span>
+      <span class="comp-date">2025.6 – 2025.9</span>
+      <span class="comp-name">中国机器人及人工智能大赛 · 智能家电赛</span>
+      <span class="comp-award">国家级三等奖</span>
     </div>
     <div class="comp-item">
-      <span class="comp-date">2024 · 2025</span>
-      <span class="comp-name">蓝桥杯全国软件和信息技术专业人才大赛</span>
-      <span class="comp-tag">算法 · 嵌入式</span>
+      <span class="comp-date">2025.6 – 2025.8</span>
+      <span class="comp-name">西门子杯中国智能制造挑战赛 · 工业嵌入式赛道</span>
+      <span class="comp-award"></span>
     </div>
     <div class="comp-item">
-      <span class="comp-date">2024 · 2025</span>
-      <span class="comp-name">中国机器人及人工智能大赛</span>
-      <span class="comp-tag">ROS · 视觉 · AI</span>
+      <span class="comp-date">2025.2 – 2025.7</span>
+      <span class="comp-name">全国大学生智能汽车竞赛 · 双车跟随组</span>
+      <span class="comp-award">华东赛区二等奖</span>
     </div>
     <div class="comp-item">
-      <span class="comp-date">2024 · 2025</span>
-      <span class="comp-name">全国大学生电子设计竞赛</span>
-      <span class="comp-tag">电路 · 嵌入式</span>
+      <span class="comp-date">2024.12 – 2025.3</span>
+      <span class="comp-name">蓝桥杯全国软件和信息技术专业人才大赛 · 嵌入式赛道</span>
+      <span class="comp-award">江苏省三等奖</span>
     </div>
   </div>
 </section>
